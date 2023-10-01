@@ -1,0 +1,56 @@
+body{
+    background-image: url(oduor.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 85px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: gold;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+     content: '';
+     height: 3px;
+     width: 0;
+     position: absolute;
+     background: blue;
+     left: 0%;
+     bottom: -10px;
+     transition: 0.5s;
+}
+.navbar ul li:hover::after{
+     width:100%;
+}
+.content{
+     width: 100%;
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50);
+     text-align: center;
+     color: gold;
+}
+.content p{
+     margin: 20px;
+     font-weight: 100;
+     line-height: 25px;
+     font-size: x-large;
+}
